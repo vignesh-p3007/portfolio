@@ -636,13 +636,13 @@ body.dark .footer-social img {
   .nav-links li {
     margin: 10px 0;
     text-align: left;
-    width: 100%;
+    width: 85%;
   }
 
   .nav-links li a {
     display: block;
     padding: 10px 20px;
-    width: 100%;
+    width: 85%;
   }
 
   .nav-links.active { 
@@ -657,7 +657,7 @@ body.dark .footer-social img {
 
 @media (max-width: 768px) {
   .hero-btn {
-    width: 100%;
+    width: 85%;
     justify-content: center;
     margin-bottom: 12px;
   }
@@ -666,6 +666,7 @@ body.dark .footer-social img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 85%;
     gap: 12px;
   }
 
@@ -674,14 +675,18 @@ body.dark .footer-social img {
     min-width: 120px;
   }
 
+  .certifications ul {
+    grid-template-columns: 1fr; /* mobile: 1 per row */
+  }
+
   .contact-container {
     flex-direction: column;
     align-items: center;
   }
 
   .message-form {
-    width: 100%;
-    max-width: 100%;
+    width: 85%;
+    max-width: 85%;
   }
 }
 
