@@ -653,13 +653,11 @@ body.dark .footer-social img {
     text-align: left; 
     padding: 40px 5%; 
   }
-}
-
-@media (max-width: 768px) {
+  
   .hero-btn {
     width: 85%;
+    margin: 0 auto 12px; 
     justify-content: center;
-    margin-bottom: 12px;
   }
 
   .skills .skills-grid {
@@ -676,7 +674,7 @@ body.dark .footer-social img {
   }
 
   .certifications ul {
-    grid-template-columns: 1fr; /* mobile: 1 per row */
+    grid-template-columns: 1fr; 
   }
 
   .contact-container {
@@ -688,15 +686,32 @@ body.dark .footer-social img {
     width: 85%;
     max-width: 85%;
   }
+
+  footer {
+    text-align: center;  
+    padding: 20px 10px;
+  }
+
+  footer .footer-text {
+    margin-bottom: 12px;  
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;  
+    gap: 15px; 
+  }
 }
 
 @media (max-width: 480px) {
   .skill-card {
     flex: 1 1 100%; 
   }
-}
 
-  .certifications ul {
-    grid-template-columns: 1fr 1fr; 
+  .hero-btn {
+    width: 100%;
   }
 }
+
+
+
