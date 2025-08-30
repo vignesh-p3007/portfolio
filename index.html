@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      background: linear-gradient(135deg, #f5f7fa, #e6e9f0);
+    }
+    body.dark {
+      background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+      <div class="logo">
+        <a href="#home">
+          <img src="logo.png" alt="Logo" />
+        </a>
+      </div>
+
+      <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+
+      <ul class="nav-links">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#skills">SKILLS</a></li>
+        <li><a href="#projects">PROJECTS</a></li>
+        <li><a href="#education">EDUCATION</a></li>
+        <li><a href="#certifications">CERTIFICATIONS</a></li>
+        <li><a href="#contact">CONTACT ME</a></li>
+      </ul>
+      <button class="toggle-btn" id="darkToggle">🌙</button>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1><span class="highlight">VIGNESH</span></h1>
+    <h3>Full Stack Developer | AI/ML Enthusiast</h3>
+    <p>
+      Passionate about building intelligent and secure software solutions using Python, C++, Flask, and modern web technologies. Currently developing AI-powered applications and full-stack projects.
+    </p>
+
+    <a href="Vignesh Resume.pdf" download target="_blank" class="btn hero-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download Resume" class="btn-icon" /> Download Resume
+    </a>
+    <a href="mailto:vigneshpoojari3007@gmail.com" target="_blank" class="btn hero-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="btn-icon"/> Email
+    </a>
+    <a href="https://www.linkedin.com/in/vignesh-p3007" target="_blank" class="btn hero-btn">
+      <img src="https://i.pinimg.com/564x/6b/ab/30/6bab3017350ca04c6fa05569672bd31e.jpg" alt="LinkedIn" class="btn-icon" /> LinkedIn
+    </a>
+    <a href="https://github.com/vignesh-p3007" target="_blank" class="btn hero-btn">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="btn-icon" /> GitHub
+    </a>
+    <a href="https://leetcode.com/vignesh-p3007" target="_blank" class="btn hero-btn">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="btn-icon" /> LeetCode
+    </a>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I’m a full-stack developer and AI/ML enthusiast passionate about building intelligent, secure, and efficient applications that make a real-world impact. My work spans from developing interactive web applications to designing AI-powered solutions that solve complex problems, such as image-based disease detection and secure data encryption.
+    </p>
+    <p>
+      Currently pursuing my Bachelor's in Computer Science and Engineering at <span class="highlight">AJIET, Mangaluru</span>, I combine strong technical foundations with hands-on project experience in <span class="highlight">Python, C++, Java, Flask, React, TensorFlow/Keras, and MySQL</span>. My goal is to craft applications that are not only functional but also optimized for performance, usability, and security.
+    </p>
+    <p>
+      Beyond coding, I enjoy exploring emerging technologies, experimenting with AI/ML models, brainstorming innovative project ideas, and continuously learning new tools and frameworks to expand my skill set. I thrive on challenges that allow me to create solutions blending creativity, technology, and practical problem-solving.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+      <h2>Skills</h2>
+
+      <h3>Languages</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732212.png" alt="HTML"> HTML5</div>
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="CSS"> CSS3</div>
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="JS"> JavaScript</div>
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="Python"> Python</div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" width="24" height="24" /> C</div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" width="24" height="24" /> C++</div>
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/226/226777.png" alt="Java"> Java</div>
+      </div>
+
+      <h3>Libraries & Frameworks</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://cdn.iconscout.com/icon/free/png-256/react-1-282599.png" alt="React"> React</div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Tensorflow_logo.svg" alt="TensorFlow" width="24" height="24" /> TensorFlow/Keras</div>
+        <div class="skill-card"><img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt="Flask" width="24" height="24" /> Flask</div>
+      </div>
+
+      <h3>Version Control & Tools</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://git-scm.com/images/logos/logomark-orange@2x.png" alt="Git" width="40" height="40" />Git</div> 
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub"> GitHub</div>
+        <div class="skill-card"><img src="https://www.svgrepo.com/show/354513/vercel-icon.svg" alt="Vercel"> Vercel</div>
+        <div class="skill-card"><img src="https://huggingface.co/datasets/huggingface/brand-assets/resolve/main/hf-logo.svg" alt="HuggingFace"> Hugging Face</div>
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/919/919836.png" alt="MySQL"> MySQL</div>
+        <div class="skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRivXCkaET9d6hHwTXDxxR8Lw5Vql5cUqrkAg&s" alt="MongoDB"> MongoDB</div>
+      </div>
+
+      <h3>Soft Skills</h3>
+      <div class="skills-grid">
+        <div class="skill-card"><img src="https://static.vecteezy.com/system/resources/previews/022/585/889/non_2x/man-adventure-flag-mountain-icon-vector.jpg" alt="Leadership"> Leadership</div>
+        <div class="skill-card"><img src="https://t4.ftcdn.net/jpg/14/09/32/77/360_F_1409327769_zzgCn3AWgpbLMuCSKFNnzs5qyeCmoNmm.jpg" alt="Teamwork"> Teamwork</div>
+        <div class="skill-card"><img src="https://static.thenounproject.com/png/4230012-200.png" alt="Fast Learner"> Fast Learner</div>
+        <div class="skill-card"><img src="https://cdn-icons-png.flaticon.com/512/8148/8148303.png" alt="Problem Solving"> Problem Solving</div>
+        <div class="skill-card"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBdJXmnrpOxz9T4eO1_dVuoP0DDgChS6vDvQ&s" alt="Consistency"> Consistent</div>
+      </div>
+
+  </section>
+
+  <section id="projects" class="projects">
+      <h2>My Projects</h2>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>SecureWrite – Text Encryption & Decryption Web App</h3>
+          <p><strong>Tech Stack:</strong> C++, Flask, HTML, CSS, JavaScript, Render</p>
+          <p>
+            Developed a secure web application for encrypting and decrypting text using a custom C++ encryption algorithm with salted autokey extension.
+          </p>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/vignesh-p3007/SecureWrite" target="_blank" class="btn">GitHub Repo</a>
+          <a href="https://securewrite.onrender.com/" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>MangoMediX - Mango Leaf Disease Prediction</h3>
+          <p><strong>Tech Stack:</strong> Python, TensorFlow, Keras, Flask, HTML, CSS, JavaScript</p>
+          <p>
+            Built an AI-powered system that uses image processing and machine learning to identify diseases in mango leaves.
+          </p>
+        </div>
+        <div class="project-buttons">
+          <a href="https://github.com/vignesh-p3007/MangoMediX" target="_blank" class="btn">GitHub Repo</a>
+          <a href="https://huggingface.co/spaces/vignesh-p3007/MangoMediX" target="_blank" class="btn">Live Demo</a>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Hostel Management System</h3>
+          <p><strong>Tech Stack:</strong> PHP, HTML, CSS, JavaScript, MySQL</p>
+          <p>
+            Developed a web-based system to simplify hostel operations—managing student details, room allocations, and fee tracking.
+          </p>
+        </div>
+        
+      </div>
+
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Zoo Management System</h3>
+          <p><strong>Tech Stack:</strong> PHP, HTML, CSS, JavaScript, MySQL</p>
+          <p>
+            A database-driven application to manage animal records, staff details, ticketing, and visitor information.
+          </p>
+        </div>
+        
+      </div>
+
+  </section>
+
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <h3>Bachelor Of Engineering in Computer Science and Engineering</h3>
+      <h3>AJ Institute of Engineering & Technology</h3>
+      <p>2022-2026 | Mangaluru, Karnataka</p>
+      <p>Currently pursuing a Bachelor's degree with a strong focus on software development, data analysis, and system design. Involved in hands-on projects and collaborative learning experiences that enhance practical skills and readiness for the industry.</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>Pre-University College</h3>
+      <h3>Govt. Pre-University College Byndoor</h3>
+      <p>2020-2022 | Byndoor, Karnataka</p>
+      <p>Completed Pre-University studies with a specialization in Biology. Gained foundational knowledge in biology, chemistry, physics, and mathematics, preparing for higher studies in science and technology.</p>
+    </div>
+
+    <div class="edu-card">
+      <h3>SSLC</h3>
+      <h3>Govt. Highschool Kirimanjeshwara</h3>
+      <p>2020 | Byndoor, Karnataka</p>
+      <p>Acquired essential skills in critical thinking and problem-solving, along with a well-rounded education that emphasizes dedication and commitment to learning.</p>
+    </div>
+  </section>
+
+  <section id="certifications" class="certifications">
+    <h2>Certifications</h2>
+    <ul>
+      <li>
+        <span class="cert-title">PowerBI Workshop</span> – OfficeMaster  
+        <p class="cert-desc">
+          Learned to create AI-powered interactive dashboards in PowerBI within 30 minutes.
+        </p>
+        <div class="cert-footer">
+          <span class="cert-date">August 2025</span>
+          <a href="https://certx.in/certificate/36a28147-6eed-47a5-8342-e5f926ebba61598139" class="cert-link" target="_blank">View</a>  
+        </div>
+      </li>
+
+      <li>
+        <span class="cert-title">SQL and Relational Databases 101</span> – IBM Cognitive Class  
+        <p class="cert-desc">Understood relational database design, normalization, and SQL operations.</p>
+        <div class="cert-footer">
+          <span class="cert-date">July 2025</span>
+          <a href="https://courses.cognitiveclass.ai/certificates/2d26756a6f6844548cac69fbf1729ba1" class="cert-link" target="_blank">View</a>  
+        </div>
+      </li>
+
+      <li>
+        <span class="cert-title">Explore Machine Learning using Python</span> – Infosys Springboard  
+        <p class="cert-desc">Explored ML concepts, data preprocessing, and model building using Python.</p>
+        <div class="cert-footer">
+          <span class="cert-date">May 2025</span>
+          <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_012600400790749184237_shared/1-158dbe5a-d66f-4018-8428-ebebaf9077d2.pdf" class="cert-link" target="_blank">View</a>  
+        </div>
+      </li>
+
+      <li>
+        <span class="cert-title">VLSI Digital Design - Chip Design and Verilog Programming</span> – Infosys Springboard  
+        <p class="cert-desc">Gained knowledge in digital circuit design, VLSI concepts, and Verilog coding.</p>
+        <div class="cert-footer">
+          <span class="cert-date">April 2025</span>
+          <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_01384303323145011229272_shared/1-5bebbd4e-7e3c-4977-b5b0-eb33abc486f5.pdf" class="cert-link" target="_blank">View</a>  
+        </div>
+      </li>
+
+      <li>
+        <span class="cert-title">Artificial Intelligence and Machine Learning Training Course</span> – Infosys Springboard  
+        <p class="cert-desc">Learned fundamentals of AI, ML algorithms, and real-world applications.</p>
+        <div class="cert-footer">
+          <span class="cert-date">December 2024</span>
+          <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_01384321260520243233957_shared/1-9e442f4b-b535-480b-93a7-6aa4e44332c4.pdf" class="cert-link" target="_blank">View</a>  
+        </div>
+      </li>
+
+      <li>
+        <span class="cert-title">Database and SQL</span> – Infosys Springboard   
+        <p class="cert-desc">Acquired skills in relational databases, SQL queries, and data management.</p>
+        <div class="cert-footer">
+          <span class="cert-date">July 2024</span>
+          <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_013742013179420672150_shared/1-490223d2-cecb-4b71-a996-037c9cd15753.pdf" class="cert-link" target="_blank">View</a> 
+        </div>
+      </li>
+
+      <li>
+        <span class="cert-title">Basics of Python</span> – Infosys Springboard  
+        <p class="cert-desc">Gained strong foundations in Python programming for problem-solving.</p>
+        <div class="cert-footer">
+          <span class="cert-date">February 2024</span>
+          <a href="https://infyspringboard.onwingspan.com/public-assets/infosysheadstart/cert/lex_auth_013204562301591552112_shared/1-b06950c3-f03f-4b60-9810-f08ea00b64fa.pdf" class="cert-link" target="_blank">View</a>  
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+
+      <!-- Message Me Form -->
+      <div class="message-form">
+        <h3>Message Me</h3>
+        <form action="https://formspree.io/f/xgvlkwnb" method="POST">
+          
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="_replyto" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Vignesh. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="https://www.linkedin.com/in/vignesh-p3007" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=447&format=png" alt="LinkedIn" />
+      </a>
+      <a href="https://github.com/vignesh-p3007" target="_blank">
+        <img src="https://img.icons8.com/?size=100&id=12598&format=png" alt="GitHub" />
+      </a>
+      <a href="mailto:vigneshpoojari3007@gmail.com">
+        <img src="https://img.icons8.com/?size=100&id=12580&format=png" alt="Email" />
+      </a>
+    </div>
+  </footer>
+
+
+
+  <script>
+    const toggleBtn = document.getElementById("darkToggle");
+    toggleBtn.addEventListener("click", () => document.body.classList.toggle("dark"));
+
+    function toggleMenu() {
+      const navLinks = document.querySelector(".nav-links");
+      navLinks.classList.toggle("active");
+    }
+  </script>
+
+</body>
+</html>
