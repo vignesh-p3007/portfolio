@@ -653,7 +653,7 @@ body.dark .footer-social img {
     text-align: left; 
     padding: 40px 5%; 
   }
-  
+
   .hero-btn {
     width: 85%;
     margin: 0 auto 12px; 
@@ -700,6 +700,11 @@ body.dark .footer-social img {
     display: flex;
     justify-content: center;  
     gap: 15px; 
+  }
+
+  footer .social-icons a img {
+    width: 28px; 
+    height: 28px;
   }
 }
 
