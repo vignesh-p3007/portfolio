@@ -345,16 +345,16 @@ body.dark .project-info .tech-stack {
 }
 
 .skill-card {
+  display: inline-flex; 
   background: var(--card-light);
-  padding: 14px 18px;
   border-radius: 12px;
   box-shadow: var(--shadow);
   transition: var(--transition);
   font-weight: 500;
-  display: flex;
   align-items: center;
-  gap: 10px;
-  min-width: 140px;
+  gap: 8px;
+  white-space: nowrap; 
+  padding: 10px;
 }
 
 .skill-card img {
@@ -612,8 +612,39 @@ body.dark .footer-social img {
 }
 
 @media (max-width: 768px) {
-  .hamburger { 
-    display: block; 
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navbar .logo {
+    left: 20px; 
+    top: 10px; 
+  }
+
+  .navbar .logo img {
+    width: 40px; 
+    height: 40px;
+  }
+
+  .hamburger {
+    display: inline-flex;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    z-index: 102; 
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .toggle-btn {
+    position: absolute;
+    right: 65px; 
+    top: 15px;
+    z-index: 101;
   }
 
   .nav-links {
@@ -655,22 +686,33 @@ body.dark .footer-social img {
   }
 
   .hero-btn {
-    width: 85%;
-    margin: 0 auto 12px; 
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px;
+    width: auto;
     justify-content: center;
+    margin: 10px;
+    font-size: 0.9rem;
+  }
+
+  .hero-btn .btn-icon {
+    width: 20px;
+    height: 20px;
   }
 
   .skills .skills-grid {
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
-    width: 85%;
-    gap: 12px;
+    justify-content: left;
+    width: 100%;
+    gap: 10px;
   }
 
   .skill-card {
-    flex: 1 1 45%; 
-    min-width: 120px;
+    flex: 0 0 auto;
+    width: auto;   
+    padding: 10px;   
   }
 
   .certifications ul {
@@ -717,6 +759,3 @@ body.dark .footer-social img {
     width: 100%;
   }
 }
-
-
-
