@@ -501,6 +501,20 @@ body.dark .certifications .cert-desc {
   color: #fff;
 }
 
+
+/* Dark mode button styles */
+body.dark .hero-btn, 
+body.dark .project-buttons a.btn, 
+body.dark .message-form button {
+  background: var(--primary-dark);
+  color: #fff;
+}
+
+body.dark .hero-btn .btn-icon,
+body.dark .project-buttons a.btn img {
+  filter: invert(1);
+}
+
 #contact {
   padding: 40px 20px;
 }

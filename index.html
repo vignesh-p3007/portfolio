@@ -1,21 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <<title>Vignesh Poojari | Portfolio</title>
-  <meta name="description" content="Final-year Computer Science Engineering student | AI, Machine Learning, and Full-Stack Development projects. Explore my work on AI-based Skin Cancer Detection, Mango Disease Prediction, and SecureWrite.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vignesh | Portfolio</title>
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Open Graph (For LinkedIn, Facebook, etc.) -->
-  <meta property="og:title" content="Vignesh Poojari | Portfolio">
-  <meta property="og:description" content="Explore my AI, Machine Learning, and Full-Stack Development projects. Showcasing AI-Based Skin Cancer Detection, Mango Disease Prediction, SecureWrite, and more.">
-  <meta property="og:image" content="https://vignesh-p3007.github.io/portfolio/preview-image.png">
-  <meta property="og:url" content="https://vignesh-p3007.github.io/portfolio">
-  <meta property="og:type" content="website">
-
-  <!-- Twitter Card (optional but good for SEO) -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Vignesh Poojari | Portfolio">
-  <meta name="twitter:description" content="Explore my projects in AI, ML, and Full-Stack Development.">
-  <meta name="twitter:image" content="https://vignesh-p3007.github.io/portfolio/preview-image.png">
   <link rel="stylesheet" href="style.css" />
   <style>
     html { scroll-behavior: smooth; }
@@ -61,16 +55,16 @@
       <img src="https://cdn-icons-png.flaticon.com/512/724/724933.png" alt="Download Resume" class="btn-icon" /> Download Resume
     </a>
     <a href="mailto:vigneshpoojari3007@gmail.com" target="_blank" class="btn hero-btn">
-      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="btn-icon"/> Email
+      <img src="https://img.icons8.com/?size=100&id=12580&format=png" alt="Email" class="btn-icon"/> Email
     </a>
     <a href="https://www.linkedin.com/in/vignesh-p3007" target="_blank" class="btn hero-btn">
-      <img src="https://i.pinimg.com/564x/6b/ab/30/6bab3017350ca04c6fa05569672bd31e.jpg" alt="LinkedIn" class="btn-icon" /> LinkedIn
+      <img src="https://img.icons8.com/?size=100&id=447&format=png" alt="LinkedIn" class="btn-icon" /> LinkedIn
     </a>
     <a href="https://github.com/vignesh-p3007" target="_blank" class="btn hero-btn">
-      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="btn-icon" /> GitHub
+      <img src="https://img.icons8.com/?size=100&id=12598&format=png" alt="GitHub" class="btn-icon" /> GitHub
     </a>
     <a href="https://leetcode.com/vignesh-p3007" target="_blank" class="btn hero-btn">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" class="btn-icon" /> LeetCode
+      <img src="https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/leetcode-xp0gbbxtpmnkjk8uhdrmhg.png/leetcode-jj5yfhjdsmrt5j9xb3sec.png?_a=DATAg1AAZAA0" alt="LeetCode" class="btn-icon" /> LeetCode
     </a>
   </section>
 
@@ -334,14 +328,14 @@
     <p>&copy; 2025 Vignesh. All rights reserved.</p>
     <div class="footer-social">
       <a href="https://www.linkedin.com/in/vignesh-p3007" target="_blank">
-        <img src="https://img.icons8.com/?size=100&id=447&format=png" alt="LinkedIn" />
-      </a>
-      <a href="https://github.com/vignesh-p3007" target="_blank">
-        <img src="https://img.icons8.com/?size=100&id=12598&format=png" alt="GitHub" />
-      </a>
-      <a href="mailto:vigneshpoojari3007@gmail.com">
-        <img src="https://img.icons8.com/?size=100&id=12580&format=png" alt="Email" />
-      </a>
+      <img src="https://img.icons8.com/?size=100&id=447&format=png" alt="LinkedIn" />
+    </a>
+    <a href="https://github.com/vignesh-p3007" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" />
+    </a>
+    <a href="mailto:vigneshpoojari3007@gmail.com">
+      <img src="https://img.icons8.com/?size=60&id=60987&format=png" alt="Email" />
+    </a>
     </div>
   </footer>
 
@@ -352,9 +346,15 @@
     toggleBtn.addEventListener("click", () => document.body.classList.toggle("dark"));
 
     function toggleMenu() {
-      const navLinks = document.querySelector(".nav-links");
-      navLinks.classList.toggle("active");
-    }
+    const navLinks = document.querySelector(".nav-links");
+    navLinks.classList.toggle("active");
+  }
+
+  document.querySelectorAll(".nav-links li a").forEach(link => {
+    link.addEventListener("click", () => {
+      document.querySelector(".nav-links").classList.remove("active");
+    });
+  });
   </script>
 
 </body>
