@@ -764,12 +764,3 @@ body.dark .footer-social img {
   }
 }
 
-@media (max-width: 480px) {
-  .skill-card {
-    flex: 1 1 100%; 
-  }
-
-  .hero-btn {
-    width: 100%;
-  }
-}
